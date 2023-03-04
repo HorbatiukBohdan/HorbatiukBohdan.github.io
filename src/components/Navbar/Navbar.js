@@ -6,13 +6,13 @@ import s from "./Navbar.module.css"
 const Navbar = () => {
     return (
         <nav className={s.nav}>
-            <div className={s.item}>
+            {/*<div className={s.item}>
                 <NavLink to="/profile" className={navData => navData.isActive ? s.active : s.item}>Profile</NavLink>
-            </div>
+            </div>*/}
             <div className={`${s.item} ${s.active}`}>
-                <NavLink to='/dialogs' className={navData => navData.isActive ? s.active : s.item}>Messages</NavLink>
+                <NavLink to='/dialogs'>Messages</NavLink>
             </div>
-            <div className={s.item}>
+            {/*<div className={s.item}>
                 <a>News</a>
             </div>
             <div className={s.item}>
@@ -20,7 +20,7 @@ const Navbar = () => {
             </div>
             <div className={s.item}>
                 <a>Settings</a>
-            </div>
+            </div>*/}
         </nav>
     )
 }

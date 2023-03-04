@@ -1,11 +1,11 @@
 import React from 'react'
-import s from "./Header.module.css"
+import {HeaderWrapper} from './HeaderStyled'
 
 const Header = () => {
     return (
-        <header className={s.header}>
+        <HeaderWrapper>
             <img src='https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png' />
-        </header>
+        </HeaderWrapper>
     )
 }
 
